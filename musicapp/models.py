@@ -14,6 +14,6 @@ class song_id(models.Model):
     likes = models.IntegerField()
 
 class Lyric(models.Model):
-    Song = models.ForeignKey(song_id, on_delete= models.CASCADE)
+    song_id = models.ForeignKey(song_id, on_delete= models.CASCADE)
     content = models.CharField(max_length= 1000000)
     
