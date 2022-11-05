@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import artiste_id, song_id, Lyric
+from apis.models import artiste_id, song_id, Lyric
 
 # Register your models here.
 admin.site.register(artiste_id)
